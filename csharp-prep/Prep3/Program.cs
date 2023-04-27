@@ -22,7 +22,7 @@ class Program
             }
             else{
                 Console.WriteLine("Guess Higher: ");
-                Console.WriteLine("Now guess the Magic number: ");
+                Console.WriteLine("Guess the Magic number: ");
                 guessInput = Console.ReadLine();
                 guess = int.Parse(guessInput);
             }
