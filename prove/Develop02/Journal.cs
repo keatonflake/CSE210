@@ -21,11 +21,7 @@ public class Journal{
             string[] parts = line.Split("\n");
 
             Entry entry = new Entry();
-            // entry._date = date;
-            // entry._prompt = prompt;
-            // entry._response = response;
             Console.WriteLine(parts[0]);
-            // journal._entries.Add(entry);
         }
 
         return journal;
