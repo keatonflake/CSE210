@@ -8,14 +8,14 @@ class Program
         // load a file with text the user wants to memorize,
         // type in the text for the scripture He or She wants to memorize
         // the program starts by hiding 1/3 the length of the text no matter the size
-        
+
         bool continueHiding = true;
         bool undecided = true;
 
-        string scripture = "Wherefore my beloved brothren pray unto the Father with all the energy of heart that ye may be filled with this love which he hath bestowed upon all who are true followers of his Son Jesus Christ thay ye may become the sons of God that when he shall appear we shall be like Him for we shall see Him as He is that we may have this hope that we may be purified even as he is pure Amen";
-        string book = "Moroni";
-        int chapter = 7;
-        int beginningVerse = 48;
+        string scripture = "I will go and do the things which the Lord hath commanded,";
+        string book = "1 Nephi";
+        int chapter = 3;
+        int beginningVerse = 7;
         int endingVerse = 0;
 
 
