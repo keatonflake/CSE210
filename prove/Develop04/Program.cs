@@ -3,7 +3,7 @@ using System;
 class Program
 {
     // In this program I completed all the core requirements as well as:
-    
+
     // 1) Making the program loop so the user can do additional activities 
     // without restarting the program
     // 2) Saving the selected random prompt and all responses to a text file
@@ -21,7 +21,7 @@ class Program
             string _input = Console.ReadLine();
             int _activity = Int32.Parse(_input);
 
-            switch(_activity)
+            switch (_activity)
             {
                 case 1:
                     Breathe newBreate = new Breathe();

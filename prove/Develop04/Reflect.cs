@@ -37,9 +37,9 @@ public class Reflect : Activity
 
     public void StartActivity()
     {
-        
+
         Console.WriteLine();
-        Console.WriteLine(_topics[Randomindex(_topics.Count()-1)]);
+        Console.WriteLine(_topics[Randomindex(_topics.Count() - 1)]);
         Console.WriteLine();
         Console.WriteLine("When you have someting in mind hit enter");
         string input = Console.ReadLine();
@@ -57,17 +57,19 @@ public class Reflect : Activity
 
         while (futureTime > DateTime.Now)
         {
-            Console.WriteLine(_followUpQuestions[Randomindex(_followUpQuestions.Count() -1)]);
+            Console.WriteLine(_followUpQuestions[Randomindex(_followUpQuestions.Count() - 1)]);
             ShowSpinner(5);
         }
 
     }
 
-    public void GetStartingMessage(){
+    public void GetStartingMessage()
+    {
         Console.WriteLine(_startingMessage);
     }
 
-    public void GetEndingMessage(){
+    public void GetEndingMessage()
+    {
         Console.WriteLine(_endingMessage);
     }
 

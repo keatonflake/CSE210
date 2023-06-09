@@ -1,7 +1,7 @@
 public class Listing : Activity
 {
-    private string _startingMessage = "Welcome";
-    private string _endingMessage = "Thanks for taking the time to List your thoughts";
+    private string _startingMessage = "Welcome Lets start listing \n(Your answers will be saved into the file 'Answers.txt')";
+    private string _endingMessage = "All your responses have been saved in the file 'Answers.txt' \nThanks for taking the time to List your thoughts";
 
     List<string> _dailyJournalPrompts = new List<string>()
 {
@@ -27,12 +27,13 @@ public class Listing : Activity
     "Describe a goal or intention you have for the upcoming week and why it's important to you."
 };
 
-    public void StartActivity(){
+    public void StartActivity()
+    {
         Console.WriteLine();
         ShowSpinner(3);
         Console.WriteLine();
 
-        string _activePrompt = _dailyJournalPrompts[Randomindex(_dailyJournalPrompts.Count()-1)];
+        string _activePrompt = _dailyJournalPrompts[Randomindex(_dailyJournalPrompts.Count() - 1)];
         Console.WriteLine(_activePrompt);
         File.AppendAllText("answers.txt", "\n\n" + _activePrompt);
 
@@ -43,7 +44,7 @@ public class Listing : Activity
 
         DateTime startTime = DateTime.Now;
         DateTime futureTime = startTime.AddSeconds(_time);
-        while(futureTime > DateTime.Now)
+        while (futureTime > DateTime.Now)
         {
             Console.WriteLine();
             string input = Console.ReadLine();
@@ -54,10 +55,12 @@ public class Listing : Activity
         ShowSpinner(3);
     }
 
-    public void GetStartingMessage(){
+    public void GetStartingMessage()
+    {
         Console.WriteLine(_startingMessage);
     }
-    public void GetEndingMessage(){
+    public void GetEndingMessage()
+    {
         Console.WriteLine(_endingMessage);
     }
 }

@@ -6,22 +6,25 @@ public class Breathe : Activity
     private int breatheinDuration = 5;
     private int breatheoutDuration = 5;
 
-    public void GetStartingMessage(){
+    public void GetStartingMessage()
+    {
         Console.WriteLine(_startingMessage);
         ShowSpinner(3);
     }
 
-    public void GetEndingMessage(){
+    public void GetEndingMessage()
+    {
         Console.WriteLine(_endingMessage);
         ShowSpinner(3);
     }
 
-    public void StartActivity(){
+    public void StartActivity()
+    {
 
         DateTime startTime = DateTime.Now;
         DateTime futureTime = startTime.AddSeconds(_time);
-        
-        while(futureTime > DateTime.Now)
+
+        while (futureTime > DateTime.Now)
         {
             Console.WriteLine("breath In");
             Countdown(breatheinDuration);

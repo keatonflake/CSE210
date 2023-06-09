@@ -1,7 +1,8 @@
 public class Activity
 {
     protected int _time;
-    public void GetTime(){
+    public void GetTime()
+    {
         Console.WriteLine("how many seconds would you like to do this activity for?: ");
         string time = Console.ReadLine();
         _time = Int32.Parse(time);
@@ -50,9 +51,9 @@ public class Activity
     Random random = new Random();
     protected int Randomindex(int maxNumber)
     {
-    {
-        return random.Next(1, maxNumber + 1);
-    }
+        {
+            return random.Next(1, maxNumber + 1);
+        }
     }
 
 }
