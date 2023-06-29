@@ -2,6 +2,11 @@ using System;
 
 class Program
 {
+    // This program Exceeds expectations because of the following: 
+    // 1. It runs on a continous loop so the user does not have to restart the program.
+    // 2. When it comes to Eternal goals the count for times completed is in place of the 'X'
+    // 3. All options are written in a switch case for efficientcy and help to catch errors
+    // 4. A Try/Catch method is used when reading from files in the Manager class
     static void Main(string[] args)
     {
         bool runAgain = true;
