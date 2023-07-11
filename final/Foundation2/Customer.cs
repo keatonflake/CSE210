@@ -1,4 +1,4 @@
-class Customer : Order
+public class Customer
 {
     protected string _name;
 

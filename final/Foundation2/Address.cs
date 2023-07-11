@@ -1,4 +1,4 @@
-class Address : Customer
+public class Address
 {
     private string _streetAddress;
     private string _city;
@@ -34,16 +34,16 @@ class Address : Customer
     public string GetAddressString()
     {
         return 
-        _streetAddress + "/n" +
-        _city + "/n" +
-        _state + "/n" +
-        _province + "/n" +
-        _country + "/n";
+        _streetAddress + "\n" +
+        _city + "\n" +
+        _state + "\n" +
+        _province + "\n" +
+        _country + "\n";
     }
 
     public bool StatesideConformation()
     {
-        if(_country.ToLower() == "usa")
+        if(_country.ToLower() == "united states")
         {
             return true;
         }

@@ -1,9 +1,9 @@
-class Product : Order
+public class Product
 {
-    private string _productName;
-    private int _id;
-    private int _price;
-    private int _quantity;
+    public string _productName;
+    public int _id;
+    public int _price;
+    public int _quantity;
 
     public string GetProductName()
     {
